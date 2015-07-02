@@ -1,0 +1,20 @@
+<head>
+</head>
+
+<body>
+  {{> index}}
+</body>
+
+
+<template name="index">
+
+  <input type="file">
+
+  <br>
+
+  {{#each images}}
+    <img src="{{this.url store='images'}}"
+         alt="">
+  {{/each}}
+
+</template>
